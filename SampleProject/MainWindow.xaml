@@ -1,0 +1,20 @@
+﻿<Window x:Class="SampleProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CustomProgressbar;assembly=CustomProgessBar"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="450">
+    <Grid Margin="0 50 0 0">
+        <local:Progressbar x:Name="CustomProgressBar" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Width="80" Height="30" Content="Start" Click="Button_Click" />
+            <Button Grid.Column="1" Width="80" Height="30" Content="Reset" Click="Button_Reset" />
+        </Grid>
+    </Grid>
+</Window>
